@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="content-type"
+ content="text/html; charset=ISO-8859-1">
+  <title>DSP: Notch</title>
+  <meta name="author" content="Antti Piironen">
+</head>
+<body>
+<h1>Digital Signal Processing<br>
+Notch bandstop filter</h1>
+<h3>Description:</h3>
+A notch bandstop filter is a very simple IIR-filter, which can be used
+to cut out a single frequency tone from a signal. It is based on a
+zero-pole pair on same angular frequency.<br>
+<br>
+&nbsp;The zero on unit circle assures that the amplitude response at
+that frequency is zero. The pole on the same angle, but inside the unit
+circle, will flatten the gain of the system. The flattening is obvious,
+since for most of the points on the unit circle, the distance to zeroes
+and poles are the same, leading into amplitude response of 1. <br>
+<br>
+The bandwidth of the filter is controlled by the distance of the pole
+from the unit circle. It also defines the -3 dB half-bandwidth of the
+filter, as you can see from the following figures. <img
+ src="notch1.jpg" title="" alt="" style="width: 600px; height: 600px;"><img
+ src="notch2.jpg" title="" alt="" style="width: 600px; height: 600px;"><img
+ src="notch3.jpg" title="" alt="" style="width: 600px; height: 600px;"><br>
+These pictures can be regenerated with <a href="http://www.comsol.com/">COMSOL
+Script 1.0</a> program by running this <a href="example_notch.zip">script
+file</a>. <br>
+<hr style="width: 100%; height: 2px;"><br>
+Author: Antti Piironen, EVTEK <br>
+<br>
+<br>
+<br>
+</body>
+</html>
